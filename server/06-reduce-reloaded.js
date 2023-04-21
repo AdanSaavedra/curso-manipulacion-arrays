@@ -53,9 +53,16 @@ console.log(anotherPrac)
 
 const nums  = [1,3,4,6,7,8,9,3,7,10,2]
 
-nums.reduce(numero => {
-    
+const pract = nums.reduce((obj, value) => {
+    if(value < 6) obj['1-5'] +=1;
+    else if(value < 9) obj['6-8'] += 1;
+    else obj['9-10'] +=1;
+
+    return obj
+},{
+    '1-5':0,
+    '6-8': 0,
+    '9-10': 0
 })
-const challenge = nums
-.filter(num => num >=1 && num<=5)
-console.log(challenge)
+
+console.log(pract)
