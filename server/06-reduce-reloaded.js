@@ -11,6 +11,7 @@ const prac =item.reduce((obj,item) =>{
 
 console.log(prac)
 
+//
 const data = [
     {
         name:'Nicolas',
@@ -50,7 +51,7 @@ const anotherPrac = data
 }, {})
 console.log(anotherPrac)
 
-
+//
 const nums  = [1,3,4,6,7,8,9,3,7,10,2]
 
 const pract = nums.reduce((obj, value) => {

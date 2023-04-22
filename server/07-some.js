@@ -1,3 +1,45 @@
+
+const numbers = [1,2,3,4]
+
+const fn = numbers.some(item => item % 2 === 0)
+console.log(fn)
+
+const orders = [
+    {
+        customerName: 'Maria',
+        total: 60,
+        delivered: true
+    },
+    {
+        customerName: 'Sofia',
+        total: 120,
+        delivered: false
+    },
+    {
+        customerName: 'Adan',
+        total: 180,
+        delivered: true
+    },
+    {
+        customerName: 'Valentina',
+        total: 240,
+        delivered: true
+    },
+    {
+        customerName: 'Maria',
+        total: 2322,
+        delivered: false
+    },
+    {
+        customerName: 'Martina',
+        total: 2133,
+        delivered: true
+    }
+]
+
+const anotherFn = orders.some(item => item.total < 61)
+console.log(anotherFn)
+
 import { areIntervalsOverlapping } from 'date-fns'
 
 const dates = [
