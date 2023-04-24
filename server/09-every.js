@@ -1,3 +1,9 @@
+const numbers = [1,30,39,29,10,13]
+
+const fn = numbers.every(item => item <= 40)
+
+console.log(fn)
+
 const team = [
     {
         name: "Nicolas",
