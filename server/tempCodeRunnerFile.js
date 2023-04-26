@@ -1,39 +1,20 @@
-const calendars = {
-    primaryCalendar: [
-    {
-        startDate: new Date(2021, 1, 1, 15),
-        endDate: new Date(2021, 1, 1, 15, 30),
-        title: "Cita 1",
-    },
-    {
-        startDate: new Date(2021, 1, 1, 17),
-        endDate: new Date(2021, 1, 1, 18),
-        title: "Cita 2",
-    },
-    ],
+const products = [
+    { title: 'Pizza', price: 121, id: '🍕' },
+    { title: 'Burger', price: 121, id: '🍔' },
+    { title: 'Hot cakes', price: 121, id: '🥞' },
+];
 
-    secondaryCalendar: [
-    {
-        startDate: new Date(2021, 1, 1, 12),
-        endDate: new Date(2021, 1, 1, 12, 30),
-        title: "Cita 2",
-    },
-    {
-        startDate: new Date(2021, 1, 1, 9),
-        endDate: new Date(2021, 1, 1, 10),
-        title: "Cita 4",
-    },
-    ],
-};
+const myProducts = [];
 
-// const dates = calendars.primaryCalendar.flatMap(item => item.startDate)
-// const dates2 = calendars.secondaryCalendar.flatMap(item => item.startDate)
-// const final = dates.concat(dates2)
+console.log("products", products);
+console.log("myProducts", myProducts);
+console.log("-".repeat(10));
 
-// console.log(final)
-
-const anotherFn = Object.values(calendars).flatMap(item => {
-    return item.map(date => date.startDate)
-})
-
-console.log(anotherFn)
+const productIndex = products.findIndex(item => item.id==='🍔')
+if(productIndex !== -1){
+    myProducts.push(products[productIndex])
+    products.splice(productIndex,1)
+}
+console.log("products", products);
+console.log("myProducts", myProducts);
+console.log("-".repeat(10));
