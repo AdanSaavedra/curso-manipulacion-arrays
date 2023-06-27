@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/platzi/curso-manipulacion-de-arrays.git"
+    "url": "https://github.com/AdanSaavedra/curso-manipulacion-arrays"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/platzi/curso-manipulacion-de-arrays/issues"
+    "url": "https://github.com/AdanSaavedra/curso-manipulacion-arrays"
   },
-  "homepage": "https://github.com/platzi/curso-manipulacion-de-arrays#readme",
+  "homepage": "https://github.com/AdanSaavedra/curso-manipulacion-arrays",
   "dependencies": {
     "date-fns": "^2.29.3",
     "http-server": "^14.1.1"
