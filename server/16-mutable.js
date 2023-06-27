@@ -34,3 +34,9 @@ const update = {
         description: 'delicioso'
     }
 }
+const productIndex2 = productsV2.findIndex(item => item.id=== update.id)
+productsV2[productIndex2] = {
+    ...productsV2[productIndex2],
+    ...update.changes
+}
+console.log(productsV2)
